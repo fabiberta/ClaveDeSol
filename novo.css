@@ -1,0 +1,48 @@
+
+body{
+    background: var(--bg);
+}
+
+:root{
+    --green:  #ff1002;
+    --white:   #ffffff;
+    --black:    #000000;
+}
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    height: 40px;
+    width: 70px;
+    border-radius: 30%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+
+}
+
+div{
+    text-align: center;
+}
+img { width: 50%;
+
+}
+.btn:focus {
+    outline-style:none;
+ }
+ .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor:var(--white);
+}
+.dark-theme {
+    --bg: var(--black) ;
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor:var(--black);
+}
